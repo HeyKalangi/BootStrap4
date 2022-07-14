@@ -31,3 +31,11 @@ address{
 .copy-right{
     margin-top: 20px;
 }
+body{
+    padding-top: 50px;
+    z-index: 0;
+}
+.navbar-dark{
+    background-color: #512DA8;
+
+}
