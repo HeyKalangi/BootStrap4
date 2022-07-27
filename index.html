@@ -32,7 +32,7 @@
 
               </ul>  
               <span class="navbar-text">
-                <a data-toggle="modal" data-target="#loginModal">
+                <a id="LoginButton" data-target="#loginModal">
                     <span class="fa fa-sign-in"></span>Login
                 </a>
               </span>  
@@ -170,7 +170,7 @@
                     <img src="img/logo.png" class="img-fluid">
                 </div>
                 <div class="col-12 col-sm-3 align-self-center">
-                    <a data-toggle="modal" data-target="#ReservationModal"   type="button" class="btn btn-block btn-warning">Reserve Table</a>
+                    <a id="ReserveModal" data-target="#ReservationModal"   type="button" class="btn btn-block btn-warning">Reserve Table</a>
                 </div>
             </div>
         </div>
@@ -234,7 +234,7 @@
 </div>
 </div>
         </div>
-
+<div class="container">
         <div class="row row-content align-items-center">
             <div class="col-12 col-sm-4 order-sm-last col-md-2">
                 <h3>Our Lipsmacking Culinary Creations</h3>
@@ -289,7 +289,7 @@
             </div>
         </div>
 
-      
+    </div>
         
     <footer class="footer">
         <div class="container">
@@ -355,6 +355,22 @@
       
     })
    </script>
+   <script>
+    $(document).ready(function(){
+        $("#LoginButton").click(function(){
+            $("#loginModal").modal('show')
+
+        })
+    })
+   </script>
+    <script>
+        $(document).ready(function(){
+            $("#ReserveModal").click(function(){
+                $("#ReservationModal").modal('show')
+    
+            })
+        })
+       </script>
 </body>
 
 </html>
